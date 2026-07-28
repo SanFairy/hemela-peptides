@@ -248,7 +248,7 @@ export default function HomePage() {
             <Link href="/contact" className="btn-white text-lg">
               {t('Get a Quote', '获取报价')}
             </Link>
-            <Link href="mailto:info@hkhemela.com" className="border-2 border-white/30 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all text-lg">
+            <Link href="mailto:Jenny@hkhemela.com" className="border-2 border-white/30 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all text-lg">
               {t('Email Us', '发送邮件')}
             </Link>
           </div>
