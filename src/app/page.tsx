@@ -5,6 +5,7 @@ import { companyInfo, products, categories } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
 import Testimonials from '@/components/Testimonials';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaFlask, FaAward, FaShippingFast, FaUsers, FaChevronRight, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 
 export default function HomePage() {
@@ -87,12 +88,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="hidden md:block relative">
-              <div className="w-full h-96 bg-gradient-to-br from-primary-600/30 to-primary-400/20 rounded-3xl backdrop-blur-sm border border-white/10 flex items-center justify-center animate-float">
-                <div className="text-center">
-                  <FaFlask className="text-9xl text-white/20 mx-auto mb-4" />
-                  <p className="text-white/60 text-lg font-mono">C₁₈₇H₂₉₁N₄₅O₅₉</p>
-                  <p className="text-white/40 text-sm mt-2">High Purity Peptides</p>
-                </div>
+              <div className="w-full h-96 rounded-3xl overflow-hidden animate-float">
+                <Image
+                  src="/images/company-hero.jpg"
+                  alt="Hemela Peptides Laboratory"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
@@ -118,6 +121,15 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative rounded-2xl overflow-hidden h-64 md:h-80">
+              <Image
+                src="/images/company-about.jpg"
+                alt="Hemela Peptides Manufacturing"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
             <div>
               <div className="inline-flex items-center gap-2 text-primary-600 font-semibold text-sm mb-4">
                 <FaFlask />
