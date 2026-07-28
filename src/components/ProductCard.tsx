@@ -16,8 +16,8 @@ const ProductCard = ({ product: p }: { product: typeof products[0] }) => {
       href={`/products/${p.id}`}
       className="group bg-white rounded-2xl shadow-md shadow-gray-200/50 border border-gray-100 overflow-hidden hover:shadow-xl hover:border-primary-200 transition-all duration-300 flex flex-col"
     >
-      <div className="h-48 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+      <div className="h-64 bg-white flex items-center justify-center relative overflow-hidden p-2">
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
         {imgError ? (
           <span className="text-6xl opacity-30">🧬</span>
         ) : (
@@ -25,7 +25,7 @@ const ProductCard = ({ product: p }: { product: typeof products[0] }) => {
             src={p.image}
             alt={p.name}
             fill
-            className="object-cover group-hover:scale-110 transition-transform duration-300"
+            className="object-contain group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             onError={() => setImgError(true)}
           />

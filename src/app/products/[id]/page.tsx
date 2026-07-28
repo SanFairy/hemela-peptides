@@ -50,12 +50,12 @@ export default function ProductDetailPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Image */}
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl flex items-center justify-center aspect-square relative overflow-hidden">
+            <div className="bg-white rounded-3xl flex items-center justify-center aspect-square relative overflow-hidden p-4">
               <Image
                 src={product.image}
                 alt={product.name}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               {product.featured && (
