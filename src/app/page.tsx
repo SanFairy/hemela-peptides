@@ -88,12 +88,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="hidden md:block relative">
-              <div className="w-full h-96 rounded-3xl overflow-hidden animate-float">
+              <div className="w-full h-96 rounded-3xl overflow-hidden animate-float relative">
                 <Image
                   src="/images/company-hero.jpg"
                   alt="Hemela Peptides Laboratory"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function HomePage() {
                 src="/images/company-about.jpg"
                 alt="Hemela Peptides Manufacturing"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
