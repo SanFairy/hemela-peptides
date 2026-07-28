@@ -324,9 +324,9 @@ export const companyInfo = {
   taglineZh: '高端肽类研发解决方案',
   description: 'Hemela Peptides is a professional peptide manufacturer and supplier based in Hong Kong, specializing in high-purity research peptides, cosmetic peptides, and custom peptide synthesis. With years of expertise and state-of-the-art facilities, we serve research institutions, pharmaceutical companies, and cosmetic manufacturers worldwide.',
   descriptionZh: 'Hemela Peptides是一家位于香港的专业肽制造商和供应商，专业于高纯度研究肽、美容肽和定制肽合成。凭借多年的专业经验和先进设施，我们为全球研究机构、制药公司和化妆品制造商提供服务。',
-  email: 'info@hkhemela.com',
-  phone: '+852 XXXX XXXX',
-  whatsapp: '+852 XXXX XXXX',
+  email: 'Jenny@hkhemela.com',
+  phone: '+86 18682231604',
+  whatsapp: '+86 18682231604',
   address: 'Hong Kong',
   addressZh: '中国香港',
 };
