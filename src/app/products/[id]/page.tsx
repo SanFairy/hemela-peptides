@@ -4,7 +4,7 @@ import { useLanguage } from '@/lib/language';
 import { products } from '@/data/products';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowLeft, FaCheckCircle, FaEnvelope, FaFileAlt, FaVial, FaWeight } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle, FaEnvelope, FaFileAlt, FaVial, FaWeight, FaFlask } from 'react-icons/fa';
 import { useParams } from 'next/navigation';
 import { notFound } from 'next/navigation';
 
