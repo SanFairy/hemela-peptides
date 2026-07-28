@@ -2,8 +2,9 @@
 
 import { useLanguage } from '@/lib/language';
 import { products } from '@/data/products';
+import Image from 'next/image';
 import Link from 'next/link';
-import { FaFlask, FaArrowLeft, FaCheckCircle, FaEnvelope, FaFileAlt, FaVial, FaWeight } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle, FaEnvelope, FaFileAlt, FaVial, FaWeight } from 'react-icons/fa';
 import { useParams } from 'next/navigation';
 import { notFound } from 'next/navigation';
 
@@ -50,9 +51,15 @@ export default function ProductDetailPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Image */}
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl flex items-center justify-center aspect-square relative overflow-hidden">
-              <FaFlask className="text-9xl text-primary-300" />
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
               {product.featured && (
-                <span className="absolute top-6 left-6 bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full">
+                <span className="absolute top-6 left-6 bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full z-10">
                   {t('Featured Product', '精选产品')}
                 </span>
               )}
