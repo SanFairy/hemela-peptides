@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/lib/language';
 import { certificates } from '@/data/products';
+import Image from 'next/image';
 import { FaAward, FaCheckCircle, FaFileAlt } from 'react-icons/fa';
 
 export default function QualificationsPage() {
@@ -75,17 +76,19 @@ export default function QualificationsPage() {
                 key={cert.id}
                 className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow group"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center relative">
-                  <FaFileAlt className="text-6xl text-gray-300 group-hover:text-primary-300 transition-colors" />
-                  <div className="absolute inset-0 bg-primary-900/0 group-hover:bg-primary-900/5 transition-colors" />
+                <div className="aspect-[4/3] relative bg-gray-100">
+                  <Image
+                    src={cert.image}
+                    alt={cert.name}
+                    fill
+                    className="object-contain p-2"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
-                <div className="p-4">
+                <div className="p-4 text-center">
                   <h3 className="font-semibold text-gray-900 text-sm">
                     {cert.name}
                   </h3>
-                  <p className="text-gray-500 text-xs mt-1">
-                    {cert.nameZh}
-                  </p>
                 </div>
               </div>
             ))}

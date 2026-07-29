@@ -433,12 +433,12 @@ export const testimonials = [
 ];
 
 export const certificates = [
-  { id: 1, name: 'ISO 9001:2015', nameZh: 'ISO 9001:2015质量管理体系', image: '/images/certificates/cert1.jpg' },
-  { id: 2, name: 'GMP Certificate', nameZh: 'GMP认证', image: '/images/certificates/cert2.jpg' },
-  { id: 3, name: 'HPLC Analysis Report', nameZh: 'HPLC分析报告', image: '/images/certificates/cert3.jpg' },
-  { id: 4, name: 'MS Analysis Report', nameZh: 'MS分析报告', image: '/images/certificates/cert4.jpg' },
-  { id: 5, name: 'COA Template', nameZh: 'COA模板', image: '/images/certificates/cert5.jpg' },
-  { id: 6, name: 'Quality Control', nameZh: '质量控制', image: '/images/certificates/cert6.jpg' },
+  { id: 1, name: 'Semaglutide COA', nameZh: 'Semaglutide COA', image: '/images/certificates/Semaglutide.png' },
+  { id: 2, name: 'Tirzepatide COA', nameZh: 'Tirzepatide COA', image: '/images/certificates/Tirzepatide.png' },
+  { id: 3, name: 'Retatrutide COA', nameZh: 'Retatrutide COA', image: '/images/certificates/Retatrutide.png' },
+  { id: 4, name: 'BPC-157 COA', nameZh: 'BPC-157 COA', image: '/images/certificates/BPC-157.png' },
+  { id: 5, name: 'GHK-CU COA', nameZh: 'GHK-CU COA', image: '/images/certificates/GHK-CU.png' },
+  { id: 6, name: 'TB500 COA', nameZh: 'TB500 COA', image: '/images/certificates/TB500.png' },
 ];
 
 export const companyInfo = {
