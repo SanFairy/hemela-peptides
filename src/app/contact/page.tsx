@@ -15,8 +15,8 @@ export default function ContactPage() {
           </h1>
           <p className="text-primary-200 text-lg max-w-2xl mx-auto">
             {t(
-              'Have questions about our products or need a custom quote? Our team is here to help.',
-              '对我们的产品有疑问或需要定制报价？我们的团队随时为您服务。'
+              'The website only displays a selection of products and certificates. For the full price list, please contact us.',
+              '官网仅展示一部分产品和证书，如需查看完整价格列表，请联系我们。'
             )}
           </p>
         </div>
