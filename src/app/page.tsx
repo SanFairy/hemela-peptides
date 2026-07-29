@@ -121,12 +121,12 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-2xl overflow-hidden h-64 md:h-80">
+            <div className="relative rounded-2xl overflow-hidden h-64 md:h-96">
               <Image
                 src="/images/company-about.jpg"
                 alt="Hemela Peptides Manufacturing"
                 fill
-                className="object-contain"
+                className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -135,7 +135,7 @@ export default function HomePage() {
                 <FaFlask />
                 {t('About Hemela Peptides', '关于赫美拉肽业')}
               </div>
-              <h2 className="section-title">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 {t(
                   'Your Trusted Partner in Peptide Research',
                   '您值得信赖的肽研究合作伙伴'
@@ -162,17 +162,19 @@ export default function HomePage() {
                 <FaArrowRight />
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {advantages.map((adv, i) => (
-                <div key={i} className="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl border border-primary-100 hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center mb-3">
-                    <FaCheckCircle className="text-primary-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-sm">{adv.title}</h3>
-                  <p className="text-gray-600 text-xs leading-relaxed">{adv.desc}</p>
+          </div>
+
+          {/* Advantages */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+            {advantages.map((adv, i) => (
+              <div key={i} className="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl border border-primary-100 hover:shadow-lg transition-shadow">
+                <div className="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center mb-3">
+                  <FaCheckCircle className="text-primary-600" />
                 </div>
-              ))}
-            </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">{adv.title}</h3>
+                <p className="text-gray-600 text-xs leading-relaxed">{adv.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
